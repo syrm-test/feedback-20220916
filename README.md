@@ -1,23 +1,23 @@
-# feedback-20220916
+# 1. 无法识别的 Vue directive
 
-## Project setup
+![](./doc/1.jpg)
 
-```
-yarn install
-```
+# 2. `pnpm` 支持不完整
 
-### Compiles and hot-reloads for development
+## 2.1 正常情况
 
-```
-yarn serve
-```
+> 当使用 `yarn` 安装依赖时, 一切正常: prop 属性有提示
 
-### Compiles and minifies for production
+![](./doc/2.jpg)
 
-```
-yarn build
-```
+## 2.2 不正常情况
 
-### Customize configuration
+> 完全删掉 `node_modules` 后, 使用 `pnpm install` 重新安装依赖
 
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### 2.2.1 丢失了全局组件名称提示
+
+![](./doc/3.jpg)
+
+### 2.2.2 丢失了 prop 提示
+
+![](./doc/4.jpg)

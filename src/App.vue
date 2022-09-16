@@ -6,7 +6,7 @@
     </div>
 
     <div class="control-area">
-        <el-button :icon="isLoading ? 'el-icon-video-pause' : 'el-icon-video-play'" @click="toggle" tabindex="1">
+        <el-button :icon="isLoading ? 'el-icon-video-pause' : 'el-icon-video-play'" tabindex="1" @click="toggle">
             {{ isLoading ? '有点晕 停车' : '爱的魔力转圈圈' }}
         </el-button>
     </div>
